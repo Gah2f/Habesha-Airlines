@@ -1,0 +1,35 @@
+.footer__top{
+    background-color:rgb(89, 111, 138);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    padding-top: 15px;
+}
+.footer__top:hover{
+    background-color: rgb(82, 125, 177);
+}
+.footer__middle{
+    padding: 10%;
+    background-color:rgb(35, 47, 62);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer__middle ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__middle a{
+    color: white;
+    text-decoration: none;
+}
+.footer__last{
+    background-color: rgb(44, 42, 42);
+    color: white;
+    text-align: center;
+}
+.footer__last ul li a{
+    text-decoration: none;
+    color: white;
+}
