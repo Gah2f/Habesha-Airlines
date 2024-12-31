@@ -13,6 +13,9 @@ function Header() {
         auth.signOut();
     }
 };
+
+
+
   return (
     <div>
       <div className='header'>
@@ -21,9 +24,14 @@ function Header() {
         <img className='header__logo' src={Habeshaimg} alt="the-img" />
         </Link>     
       </div>
-      <div className='header__search'>
-        <input placeholder='Search Fight' className='header__search__input' type="text" />
+      <div className='header__search'>        
+          <input 
+        placeholder='Search Fight' 
+        className='header__search__input' 
+        type="text" 
+      />
         <Search className='header__search__icon'/>
+              
       </div>
       <div>
         <div className="header__nav">
@@ -44,11 +52,12 @@ function Header() {
                 <option value="">AM</option>
               </select>
       </div>
-      
+      <Link to="/book"> 
       <div className='header-options'>
         <span className='header__option__line1'>Book</span>
         <span className='header__option__line2'>& Order</span>
       </div>
+      </Link>
       <div className='header-options'>
         <span className='header__option__line1'>Your</span>
         <span className='header__option__line2'>Flights</span>
