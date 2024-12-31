@@ -1,13 +1,16 @@
-.header{
+.header {
     height: 60px;
     display: flex;
     align-items: center;
     background-color: skyblue;
-    position: sticky;
+    position: fixed; 
     top: 0;
+    left: 0; 
+    right: 0; 
     z-index: 100;
 }
-.header__logo{
+
+.header__logo {
     width: 100px;
     height: 100%;
     object-fit: contain;
@@ -16,33 +19,32 @@
     border-radius: 5px;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.7), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.header__search{
+
+.header__search {
     display: flex;
     flex: 1;
     align-items: center;
-    border-radius: 24px;
-    align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  flex: 1;
+    border-radius: 10px; 
+    overflow: hidden;
+    width: 100%;
 }
-.header__search__input{
-    height: 11px;
+
+.header__search__input {
+    height: 10px; 
     padding: 10px;
     border: none;
     width: 100%;
 }
-.header__search__icon{
+
+.header__search__icon {
     padding: 5px;
     height: 22px !important;
     background-color: #5fb6cc;
     display: flex;
     cursor: pointer;
-  
 }
-.header-options{
+
+.header-options {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -50,35 +52,43 @@
     color: white;
     cursor: pointer;
 }
-.header__nav{
+
+.header__nav {
     display: flex;
     justify-content: space-evenly;
 }
-.header__option__line1{
+
+.header__option__line1 {
     font-size: 10px;
 }
-.header__option__line2{
+
+.header__option__line2 {
     font-size: 13px;
     font-weight: 800;
 }
-.header__nav a{
+
+.header__nav a {
     text-decoration: none;
     color: white;
 }
-.header__options__upcoming{
+
+.header__options__upcoming {
     display: flex;
     align-items: center;
     color: white;
 }
-.header__options__upcoming a{
+
+.header__options__upcoming a {
     list-style: none;
     text-decoration: none;
     color: white;
 }
-.header__basketCount{
+
+.header__basketCount {
     margin-left: 10px;
     margin-right: 10px;
 }
-.language{
+
+.language {
     border-radius: 5px;
 }
