@@ -2,13 +2,16 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 function Footer() {
-    
+    const backHandler = (e) => {
+        e.preventDefault();
+        window.scrollTo(0,0);
+    }
   return (
     <div className='footer'>
        
         <div className="footer__top">
             <Link to="/">
-            <b>Back to top</b>
+           <button className='back-to-top' onClick={backHandler}> Back to top </button>
             </Link>
         </div>
      
