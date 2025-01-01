@@ -1,0 +1,50 @@
+.Travel_place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    min-width: 100px;
+    max-height: 400px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 6px 18px -5px rgba(0,0,0,0.75);
+    transition: transform 0.1s ease-in;
+
+}
+.Travel_place img{
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.Travel_place__price{
+    margin-top: 5px;
+}
+.Travel_place__info{
+    height: 100px;
+    margin-bottom: 15px;
+}
+.Travel_place button{
+    padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2575fc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Travel_place button{
+    background-color: #096296;
+}
+.Travel_place__rating{
+    display: flex;
+}
+.Travel_place:hover{
+    transform: scale(1.05);
+}
