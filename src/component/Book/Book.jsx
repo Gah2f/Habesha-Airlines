@@ -49,8 +49,9 @@ function Book() {
            onChange={(e)=>SetPlace(e.target.value)}
           />
         </div>
+        
         <div className="form-group">
-          <label htmlFor="date">Departure Date</label>
+          <label htmlFor="time">Departure Time</label>
           <input
             type="date"
             id="date"
@@ -58,14 +59,22 @@ function Book() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="time">Departure Time</label>
-          <input
-            type="time"
-            id="time"
-            required
-          />
+          <label htmlFor="date">Departure Date</label>
+          <select>
+            <option>10:00 AM</option>
+            <option>12:00 AM</option>
+            <option>13:45 AM</option>
+            <option>17:00 AM</option>
+            <option>19:00 AM</option>
+            <option>20:00 AM</option>
+            <option>22:45 PM</option>
+            <option>21:00 PM</option>
+            <option>23:45 PM</option>
+            <option>00:45 PM</option>
+            <option>01:00 PM</option>
+
+          </select>
         </div>
-      
         <button onClick={addToBasket} type="submit">Book</button>
         
       </form>
