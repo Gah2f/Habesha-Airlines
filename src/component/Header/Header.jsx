@@ -199,10 +199,6 @@ function Header() {
         <span className='header__option__line2'>& Order</span>
       </div>
       </Link>
-      <div className='header-options'>
-        <span className='header__option__line1'>Your</span>
-        <span className='header__option__line2'>Flights</span>
-      </div>
       <div className="header__options__upcoming">
       <Link to="/payment"> 
       {/* <ShoppingBasket/> */}
