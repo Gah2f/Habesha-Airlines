@@ -92,3 +92,35 @@
 .language {
     border-radius: 5px;
 }
+.form-select {
+    width: 100px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    appearance: none; 
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+  }
+  
+  .form-select:hover {
+    border-color: #007bff;
+  }
+  .form-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .form-select:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    color: #6c757d;
+  }
