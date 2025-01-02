@@ -35,14 +35,18 @@ const navigate=useNavigate();
     setDisabled(e.empty);
     setError(e.error ? e.error.message : "");
 };
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {  
+     alert("Done! Check your email!")
    e.preventDefault();
    setProcessing(true);
    
    const payload = await stripe.confirmCardPayment(clientSecret, {
     payment_method: {
         card: element.getElement(CardElement),
+        
     }
+ 
+
 }).then(({ paymentIntent }) => {
     setSucceeded(true);
     setError(null);
@@ -100,7 +104,7 @@ const navigate=useNavigate();
                                     prefix={"$"}
                                 /> 
                                 <button disabled={processing || disabled || succeeded}>
-                                    <span>{processing ? <p>Processing</p> : "Pay now"}</span>
+                                    <span>{processing ? <p>Done!</p> : "Pay now"}</span>
                                 </button>
                                 </div>
                                 {error && <div>{error}</div>}
